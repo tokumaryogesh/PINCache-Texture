@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF_176545656048 /* PINCacheTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_373788176295 /* PINCacheTexture.framework */; };
-		BF_178658462244 /* PINCacheTexture.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_373788176295 /* PINCacheTexture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_226889808875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = VG_148324475671 /* LaunchScreen.storyboard */; };
 		BF_239227276368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_767799654798 /* AppDelegate.swift */; };
 		BF_295033507116 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_489898917548 /* PINCache.framework */; };
@@ -17,21 +16,30 @@
 		BF_433925706758 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_752755466093 /* AsyncDisplayKit.framework */; };
 		BF_535480286735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FR_629362062702 /* Assets.xcassets */; };
 		BF_601508048862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = VG_127754196491 /* Main.storyboard */; };
-		BF_661677069706 /* PINCacheTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_373788176295 /* PINCacheTexture.framework */; };
 		BF_730068609147 /* PINCacheTextureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_620833734141 /* PINCacheTextureTests.swift */; };
 		BF_843982896092 /* ImageCacheHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_325272171449 /* ImageCacheHandler.swift */; };
 		BF_864437328577 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_292304349049 /* LinuxMain.swift */; };
+		D70E6A7221F609DC004105BB /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_752755466093 /* AsyncDisplayKit.framework */; };
+		D747D6C521F60C7100ACE2CE /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_489898917548 /* PINCache.framework */; };
+		D747D6C721F60C8800ACE2CE /* PINCacheTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_373788176295 /* PINCacheTexture.framework */; };
+		D747D6C821F60C8800ACE2CE /* PINCacheTexture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FR_373788176295 /* PINCacheTexture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D747D6CB21F60CD000ACE2CE /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70E6A6A21F609B0004105BB /* PINOperation.framework */; };
+		D747D6CD21F60D7100ACE2CE /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70E6A6A21F609B0004105BB /* PINOperation.framework */; };
+		D747D6CE21F60D9C00ACE2CE /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70E6A6B21F609B0004105BB /* PINRemoteImage.framework */; };
+		D747D6D021F60E2F00ACE2CE /* PINOperation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D70E6A6A21F609B0004105BB /* PINOperation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D747D6D121F60E2F00ACE2CE /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70E6A6B21F609B0004105BB /* PINRemoteImage.framework */; };
+		D747D6D221F60E2F00ACE2CE /* PINRemoteImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D70E6A6B21F609B0004105BB /* PINRemoteImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CIP_81184168825 /* PBXContainerItemProxy */ = {
+		CIP_90726629911 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = P_3737881762959 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = NT_373788176295;
 			remoteInfo = PINCacheTexture;
 		};
-		CIP_90726629911 /* PBXContainerItemProxy */ = {
+		D747D6C921F60C8800ACE2CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = P_3737881762959 /* Project object */;
 			proxyType = 1;
@@ -41,19 +49,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CFBP_1335013547 /* CopyFiles */ = {
+		D747D6C221F60C4200ACE2CE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF_178658462244 /* PINCacheTexture.framework in CopyFiles */,
+				D747D6D221F60E2F00ACE2CE /* PINRemoteImage.framework in Embed Frameworks */,
+				D747D6D021F60E2F00ACE2CE /* PINOperation.framework in Embed Frameworks */,
+				D747D6C821F60C8800ACE2CE /* PINCacheTexture.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D70E6A6A21F609B0004105BB /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
+		D70E6A6B21F609B0004105BB /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
 		FR_127754196491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FR_148324475671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FR_278027052277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D747D6CE21F60D9C00ACE2CE /* PINRemoteImage.framework in Frameworks */,
+				D747D6CD21F60D7100ACE2CE /* PINOperation.framework in Frameworks */,
 				BF_433925706758 /* AsyncDisplayKit.framework in Frameworks */,
 				BF_295033507116 /* PINCache.framework in Frameworks */,
 			);
@@ -85,7 +100,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_661677069706 /* PINCacheTexture.framework in Frameworks */,
+				D747D6CB21F60CD000ACE2CE /* PINOperation.framework in Frameworks */,
+				D747D6C521F60C7100ACE2CE /* PINCache.framework in Frameworks */,
+				D747D6D121F60E2F00ACE2CE /* PINRemoteImage.framework in Frameworks */,
+				D70E6A7221F609DC004105BB /* AsyncDisplayKit.framework in Frameworks */,
+				D747D6C721F60C8800ACE2CE /* PINCacheTexture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +122,8 @@
 		G_1952740716080 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D70E6A6A21F609B0004105BB /* PINOperation.framework */,
+				D70E6A6B21F609B0004105BB /* PINRemoteImage.framework */,
 				G_2883690153011 /* Carthage */,
 			);
 			name = Frameworks;
@@ -212,13 +233,13 @@
 				SBP_81184168825 /* Sources */,
 				RBP_81184168825 /* Resources */,
 				FBP_81184168825 /* Frameworks */,
-				CFBP_1335013547 /* CopyFiles */,
 				SSBP_1108946741 /* Carthage */,
+				D747D6C221F60C4200ACE2CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				TD_855264261854 /* PBXTargetDependency */,
+				D747D6CA21F60C8800ACE2CE /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -250,6 +271,9 @@
 			attributes = {
 				LastUpgradeCheck = 0920;
 				TargetAttributes = {
+					NT_373788176295 = {
+						DevelopmentTeam = FT6Z43AJD2;
+					};
 					NT_811841688257 = {
 						DevelopmentTeam = FT6Z43AJD2;
 					};
@@ -338,15 +362,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D747D6CA21F60C8800ACE2CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = NT_373788176295 /* PINCacheTexture */;
+			targetProxy = D747D6C921F60C8800ACE2CE /* PBXContainerItemProxy */;
+		};
 		TD_799810221203 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = NT_373788176295 /* PINCacheTexture */;
 			targetProxy = CIP_90726629911 /* PBXContainerItemProxy */;
-		};
-		TD_855264261854 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = NT_373788176295 /* PINCacheTexture */;
-			targetProxy = CIP_81184168825 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -505,6 +529,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FT6Z43AJD2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -531,6 +556,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FT6Z43AJD2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
